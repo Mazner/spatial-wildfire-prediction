@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_07e6731164f69f3b7bbd7547e8b75c7f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_07e6731164f69f3b7bbd7547e8b75c7f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_07e6731164f69f3b7bbd7547e8b75c7f = L.map(
+                "map_07e6731164f69f3b7bbd7547e8b75c7f",
+                {
+                    center: [-15.7801, -47.9292],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a14468e1993a07c7438675d5920e97e3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a14468e1993a07c7438675d5920e97e3.addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+            var circle_marker_9283e09a3dcc4540de12a8712ffdbf69 = L.circleMarker(
+                [-10.3333333, -53.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_4d45bbc46a1d38190d8a8aa8355fc5a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2c00575f11026213d40b8b29593229b = $(`<div id="html_e2c00575f11026213d40b8b29593229b" style="width: 100.0%; height: 100.0%;">BRASILIA - 4709 dias sem chuva</div>`)[0];
+                popup_4d45bbc46a1d38190d8a8aa8355fc5a4.setContent(html_e2c00575f11026213d40b8b29593229b);
+            
+        
+
+        circle_marker_9283e09a3dcc4540de12a8712ffdbf69.bindPopup(popup_4d45bbc46a1d38190d8a8aa8355fc5a4)
+        ;
+
+        
+    
+    
+            var circle_marker_21f2c9a4925eb00a36deff76115fb06a = L.circleMarker(
+                [-20.4640173, -54.6162947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_b345e0e12bb99b989ee9fc5c09827a1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6951321795e20309b8a831abd2dc7be = $(`<div id="html_c6951321795e20309b8a831abd2dc7be" style="width: 100.0%; height: 100.0%;">CAMPO GRANDE - 4328 dias sem chuva</div>`)[0];
+                popup_b345e0e12bb99b989ee9fc5c09827a1d.setContent(html_c6951321795e20309b8a831abd2dc7be);
+            
+        
+
+        circle_marker_21f2c9a4925eb00a36deff76115fb06a.bindPopup(popup_b345e0e12bb99b989ee9fc5c09827a1d)
+        ;
+
+        
+    
+    
+            var circle_marker_348023d833ef7e52dbff550a023adab9 = L.circleMarker(
+                [-16.680882, -49.2532691],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_ebec22ce664880ae36477a906bec6d33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_002d612544c4ad100b5ed1c0dcabe33a = $(`<div id="html_002d612544c4ad100b5ed1c0dcabe33a" style="width: 100.0%; height: 100.0%;">GOIANIA - 4202 dias sem chuva</div>`)[0];
+                popup_ebec22ce664880ae36477a906bec6d33.setContent(html_002d612544c4ad100b5ed1c0dcabe33a);
+            
+        
+
+        circle_marker_348023d833ef7e52dbff550a023adab9.bindPopup(popup_ebec22ce664880ae36477a906bec6d33)
+        ;
+
+        
+    
+    
+            var circle_marker_ab2cfb9cec3ae2a9e240115d633e1139 = L.circleMarker(
+                [-15.5986686, -56.0991301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_6274ada8f78645fb056279cdb0cf76c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39dfafa25e75c73214d1b1120c4df41b = $(`<div id="html_39dfafa25e75c73214d1b1120c4df41b" style="width: 100.0%; height: 100.0%;">CUIABA - 3986 dias sem chuva</div>`)[0];
+                popup_6274ada8f78645fb056279cdb0cf76c0.setContent(html_39dfafa25e75c73214d1b1120c4df41b);
+            
+        
+
+        circle_marker_ab2cfb9cec3ae2a9e240115d633e1139.bindPopup(popup_6274ada8f78645fb056279cdb0cf76c0)
+        ;
+
+        
+    
+    
+            var circle_marker_23e404edee66aea655f7e6904b260a54 = L.circleMarker(
+                [-17.7333689, -49.105908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_52b90c870675150a4816110d9cfc209c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_962b2ebc3968ea893ad155d9f9410058 = $(`<div id="html_962b2ebc3968ea893ad155d9f9410058" style="width: 100.0%; height: 100.0%;">MORRINHOS - 3786 dias sem chuva</div>`)[0];
+                popup_52b90c870675150a4816110d9cfc209c.setContent(html_962b2ebc3968ea893ad155d9f9410058);
+            
+        
+
+        circle_marker_23e404edee66aea655f7e6904b260a54.bindPopup(popup_52b90c870675150a4816110d9cfc209c)
+        ;
+
+        
+    
+    
+            var circle_marker_9ce494ec3674f0e4b30ce02f6cdfe23a = L.circleMarker(
+                [-20.7866799, -51.7061247],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_e932020036a4acbd2f1e9a9a8997b4b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78b34b4c6c565caf8ec8625d86b31432 = $(`<div id="html_78b34b4c6c565caf8ec8625d86b31432" style="width: 100.0%; height: 100.0%;">TRES LAGOAS - 3671 dias sem chuva</div>`)[0];
+                popup_e932020036a4acbd2f1e9a9a8997b4b4.setContent(html_78b34b4c6c565caf8ec8625d86b31432);
+            
+        
+
+        circle_marker_9ce494ec3674f0e4b30ce02f6cdfe23a.bindPopup(popup_e932020036a4acbd2f1e9a9a8997b4b4)
+        ;
+
+        
+    
+    
+            var circle_marker_a36f609001f809764c1fb6ea2383e61a = L.circleMarker(
+                [-22.5286917, -55.723426],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_ed57a7e2c178627c8502ae90adcfeda5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77780b43a16e6a9c479d0cb30ed8658d = $(`<div id="html_77780b43a16e6a9c479d0cb30ed8658d" style="width: 100.0%; height: 100.0%;">PONTA PORA - 3538 dias sem chuva</div>`)[0];
+                popup_ed57a7e2c178627c8502ae90adcfeda5.setContent(html_77780b43a16e6a9c479d0cb30ed8658d);
+            
+        
+
+        circle_marker_a36f609001f809764c1fb6ea2383e61a.bindPopup(popup_ed57a7e2c178627c8502ae90adcfeda5)
+        ;
+
+        
+    
+    
+            var circle_marker_2f826db0d76cc3619628ab32ea56206d = L.circleMarker(
+                [-22.302254, -53.8276006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_fd9dc0eee9e5cf02dd1c2088b83a3e20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f682bff7c4bc332f1e742d8ae61f8e97 = $(`<div id="html_f682bff7c4bc332f1e742d8ae61f8e97" style="width: 100.0%; height: 100.0%;">IVINHEMA - 3498 dias sem chuva</div>`)[0];
+                popup_fd9dc0eee9e5cf02dd1c2088b83a3e20.setContent(html_f682bff7c4bc332f1e742d8ae61f8e97);
+            
+        
+
+        circle_marker_2f826db0d76cc3619628ab32ea56206d.bindPopup(popup_fd9dc0eee9e5cf02dd1c2088b83a3e20)
+        ;
+
+        
+    
+    
+            var circle_marker_76fe379dcc2da82140b31421c76882a1 = L.circleMarker(
+                [-19.0006027, -57.6507535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_8fb072e4ba58298d710ea335b3d6597e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a31d88edbd4e416675993a8f0f912ca = $(`<div id="html_2a31d88edbd4e416675993a8f0f912ca" style="width: 100.0%; height: 100.0%;">CORUMBA - 3366 dias sem chuva</div>`)[0];
+                popup_8fb072e4ba58298d710ea335b3d6597e.setContent(html_2a31d88edbd4e416675993a8f0f912ca);
+            
+        
+
+        circle_marker_76fe379dcc2da82140b31421c76882a1.bindPopup(popup_8fb072e4ba58298d710ea335b3d6597e)
+        ;
+
+        
+    
+    
+            var circle_marker_32470605a095c7712abde78421acfc2c = L.circleMarker(
+                [-14.6213903, -57.4907268],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_679112a99cfd69e39ec62237e43c67c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0229bfe807349337ccff863d1665edaf = $(`<div id="html_0229bfe807349337ccff863d1665edaf" style="width: 100.0%; height: 100.0%;">TANGARA DA SERRA - 3360 dias sem chuva</div>`)[0];
+                popup_679112a99cfd69e39ec62237e43c67c8.setContent(html_0229bfe807349337ccff863d1665edaf);
+            
+        
+
+        circle_marker_32470605a095c7712abde78421acfc2c.bindPopup(popup_679112a99cfd69e39ec62237e43c67c8)
+        ;
+
+        
+    
+    
+            var circle_marker_c228b93b91a2c0798ab1623674c2151d = L.circleMarker(
+                [-9.3970621, -40.5435166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_360b6b1fe6ddbf3639c92957c1800083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f94173ce949e50119f71f24719084e2 = $(`<div id="html_1f94173ce949e50119f71f24719084e2" style="width: 100.0%; height: 100.0%;">S.J. DO RIO CLARO - 3332 dias sem chuva</div>`)[0];
+                popup_360b6b1fe6ddbf3639c92957c1800083.setContent(html_1f94173ce949e50119f71f24719084e2);
+            
+        
+
+        circle_marker_c228b93b91a2c0798ab1623674c2151d.bindPopup(popup_360b6b1fe6ddbf3639c92957c1800083)
+        ;
+
+        
+    
+    
+            var circle_marker_f610614d63eca2302cca763f99b6dfa9 = L.circleMarker(
+                [-16.2535456, -47.9500276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_7f4a6066a75193ff5bf4263d91c73f30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4f20adaefd4e0e9c22d9fd5d8f46fbb = $(`<div id="html_f4f20adaefd4e0e9c22d9fd5d8f46fbb" style="width: 100.0%; height: 100.0%;">LUZIANIA - 3297 dias sem chuva</div>`)[0];
+                popup_7f4a6066a75193ff5bf4263d91c73f30.setContent(html_f4f20adaefd4e0e9c22d9fd5d8f46fbb);
+            
+        
+
+        circle_marker_f610614d63eca2302cca763f99b6dfa9.bindPopup(popup_7f4a6066a75193ff5bf4263d91c73f30)
+        ;
+
+        
+    
+    
+            var circle_marker_4e3dacbebb0282879a38026f57940102 = L.circleMarker(
+                [-16.4603533, -54.6397099],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_056181e177ed84bf77ef72d713fe3dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34ff12a751ca638b544a0a94860c1bd4 = $(`<div id="html_34ff12a751ca638b544a0a94860c1bd4" style="width: 100.0%; height: 100.0%;">RONDONOPOLIS - 3278 dias sem chuva</div>`)[0];
+                popup_056181e177ed84bf77ef72d713fe3dc7.setContent(html_34ff12a751ca638b544a0a94860c1bd4);
+            
+        
+
+        circle_marker_4e3dacbebb0282879a38026f57940102.bindPopup(popup_056181e177ed84bf77ef72d713fe3dc7)
+        ;
+
+        
+    
+    
+            var circle_marker_ef072270c4ee79d114fb94814ac67d40 = L.circleMarker(
+                [-21.4800208, -47.5531095],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_efe62313d14858ad3e5a27116e0cbe8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2814b59b1b89255a6fce6d310d713e43 = $(`<div id="html_2814b59b1b89255a6fce6d310d713e43" style="width: 100.0%; height: 100.0%;">SAO SIMAO - 3274 dias sem chuva</div>`)[0];
+                popup_efe62313d14858ad3e5a27116e0cbe8b.setContent(html_2814b59b1b89255a6fce6d310d713e43);
+            
+        
+
+        circle_marker_ef072270c4ee79d114fb94814ac67d40.bindPopup(popup_efe62313d14858ad3e5a27116e0cbe8b)
+        ;
+
+        
+    
+    
+            var circle_marker_1a89bd341657f124379870e4468ef519 = L.circleMarker(
+                [-12.5444887, -55.7233972],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_9d9649d1841e06f879eba002b414dbc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35aabfa78bc48d4245ea6a3d093ac608 = $(`<div id="html_35aabfa78bc48d4245ea6a3d093ac608" style="width: 100.0%; height: 100.0%;">SORRISO - 3274 dias sem chuva</div>`)[0];
+                popup_9d9649d1841e06f879eba002b414dbc7.setContent(html_35aabfa78bc48d4245ea6a3d093ac608);
+            
+        
+
+        circle_marker_1a89bd341657f124379870e4468ef519.bindPopup(popup_9d9649d1841e06f879eba002b414dbc7)
+        ;
+
+        
+    
+    
+            var circle_marker_a414f23aae54f2ee32cf48339add2b72 = L.circleMarker(
+                [-17.8115199, -50.5976641],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_820117e28df0717066172ec3256a9770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7c206d77a7cd1ccfd4b521508447ebf = $(`<div id="html_d7c206d77a7cd1ccfd4b521508447ebf" style="width: 100.0%; height: 100.0%;">santa helena de goiás - FRP médio: 335.32</div>`)[0];
+                popup_820117e28df0717066172ec3256a9770.setContent(html_d7c206d77a7cd1ccfd4b521508447ebf);
+            
+        
+
+        circle_marker_a414f23aae54f2ee32cf48339add2b72.bindPopup(popup_820117e28df0717066172ec3256a9770)
+        ;
+
+        
+    
+    
+            var circle_marker_5bca22fa80e468809799eb61e84a8d25 = L.circleMarker(
+                [-21.8046467, -54.5433047],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_3de92a6ece08d82de115037295489cd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4f7426d4b383a963ee542e040fa90b3 = $(`<div id="html_e4f7426d4b383a963ee542e040fa90b3" style="width: 100.0%; height: 100.0%;">rio brilhante - FRP médio: 325.13</div>`)[0];
+                popup_3de92a6ece08d82de115037295489cd7.setContent(html_e4f7426d4b383a963ee542e040fa90b3);
+            
+        
+
+        circle_marker_5bca22fa80e468809799eb61e84a8d25.bindPopup(popup_3de92a6ece08d82de115037295489cd7)
+        ;
+
+        
+    
+    
+            var circle_marker_b96b469ef5134a7eb2762b56b2a719ac = L.circleMarker(
+                [-13.547958, -58.8146235],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_7a795180eefd0c6126ac018c6d4f736d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_703bf897ee7bb255ba77ebcba4ae462f = $(`<div id="html_703bf897ee7bb255ba77ebcba4ae462f" style="width: 100.0%; height: 100.0%;">sapezal - FRP médio: 234.99</div>`)[0];
+                popup_7a795180eefd0c6126ac018c6d4f736d.setContent(html_703bf897ee7bb255ba77ebcba4ae462f);
+            
+        
+
+        circle_marker_b96b469ef5134a7eb2762b56b2a719ac.bindPopup(popup_7a795180eefd0c6126ac018c6d4f736d)
+        ;
+
+        
+    
+    
+            var circle_marker_8e5961d71b9ac8aad0ddbfb7ecc62269 = L.circleMarker(
+                [-12.5444887, -55.7233972],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_6614ece19226151e7c1b205e6a0708d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33f9531f71b66a3031c1b490f4d65877 = $(`<div id="html_33f9531f71b66a3031c1b490f4d65877" style="width: 100.0%; height: 100.0%;">sorriso - FRP médio: 216.58</div>`)[0];
+                popup_6614ece19226151e7c1b205e6a0708d4.setContent(html_33f9531f71b66a3031c1b490f4d65877);
+            
+        
+
+        circle_marker_8e5961d71b9ac8aad0ddbfb7ecc62269.bindPopup(popup_6614ece19226151e7c1b205e6a0708d4)
+        ;
+
+        
+    
+    
+            var circle_marker_6cd05d4e9508b7efd448b7d1a97fd662 = L.circleMarker(
+                [-12.1218837, -58.0042714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_dba384efa546101c026038cdddfcd142 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b37bf76c4a1bf025e2be584670469bca = $(`<div id="html_b37bf76c4a1bf025e2be584670469bca" style="width: 100.0%; height: 100.0%;">brasnorte - FRP médio: 203.08</div>`)[0];
+                popup_dba384efa546101c026038cdddfcd142.setContent(html_b37bf76c4a1bf025e2be584670469bca);
+            
+        
+
+        circle_marker_6cd05d4e9508b7efd448b7d1a97fd662.bindPopup(popup_dba384efa546101c026038cdddfcd142)
+        ;
+
+        
+    
+    
+            var circle_marker_cc673314497cfa77b68962a0afbd1ac0 = L.circleMarker(
+                [-19.0219279, -53.0122646],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_a23fc99e91d8b555851c266b3673b858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bca6937534ac06b9dfffad56c50b055 = $(`<div id="html_5bca6937534ac06b9dfffad56c50b055" style="width: 100.0%; height: 100.0%;">paraíso das águas - FRP médio: 195.87</div>`)[0];
+                popup_a23fc99e91d8b555851c266b3673b858.setContent(html_5bca6937534ac06b9dfffad56c50b055);
+            
+        
+
+        circle_marker_cc673314497cfa77b68962a0afbd1ac0.bindPopup(popup_a23fc99e91d8b555851c266b3673b858)
+        ;
+
+        
+    
+    
+            var circle_marker_0ca06a0fd8b35390277af05d691a0969 = L.circleMarker(
+                [-22.302254, -53.8276006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_ba75b8ddde1ad42fa67c0c7fdb0212da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e6afcefd7d95d009f5890d8d14391b8 = $(`<div id="html_1e6afcefd7d95d009f5890d8d14391b8" style="width: 100.0%; height: 100.0%;">ivinhema - FRP médio: 187.74</div>`)[0];
+                popup_ba75b8ddde1ad42fa67c0c7fdb0212da.setContent(html_1e6afcefd7d95d009f5890d8d14391b8);
+            
+        
+
+        circle_marker_0ca06a0fd8b35390277af05d691a0969.bindPopup(popup_ba75b8ddde1ad42fa67c0c7fdb0212da)
+        ;
+
+        
+    
+    
+            var circle_marker_e7545e1a03f5494d60965bee0f5b22bf = L.circleMarker(
+                [-10.803888, -52.7357819],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_2fe0e176a40792522961caeaddcbac8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fe398196f60ab093f76a6b4be49d990 = $(`<div id="html_1fe398196f60ab093f76a6b4be49d990" style="width: 100.0%; height: 100.0%;">são josé do xingu - FRP médio: 176.05</div>`)[0];
+                popup_2fe0e176a40792522961caeaddcbac8a.setContent(html_1fe398196f60ab093f76a6b4be49d990);
+            
+        
+
+        circle_marker_e7545e1a03f5494d60965bee0f5b22bf.bindPopup(popup_2fe0e176a40792522961caeaddcbac8a)
+        ;
+
+        
+    
+    
+            var circle_marker_b23d10c2d5a9bf0d2aaff769bc395b05 = L.circleMarker(
+                [-14.8037659, -53.6095671],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_2e70ab58772132bb36a788953aa7fe89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e9653e041a96a82a0d31e5070bf531c = $(`<div id="html_1e9653e041a96a82a0d31e5070bf531c" style="width: 100.0%; height: 100.0%;">santo antônio do leste - FRP médio: 175.79</div>`)[0];
+                popup_2e70ab58772132bb36a788953aa7fe89.setContent(html_1e9653e041a96a82a0d31e5070bf531c);
+            
+        
+
+        circle_marker_b23d10c2d5a9bf0d2aaff769bc395b05.bindPopup(popup_2e70ab58772132bb36a788953aa7fe89)
+        ;
+
+        
+    
+    
+            var circle_marker_8e1c002337a7c84307ecc76d7cfcdae5 = L.circleMarker(
+                [-14.4036262, -56.4364488],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_e998f47049635479ff0b19b7b1d1ecbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e04e4d70a585d68a43f332d6b7ce629b = $(`<div id="html_e04e4d70a585d68a43f332d6b7ce629b" style="width: 100.0%; height: 100.0%;">diamantino - FRP médio: 167.31</div>`)[0];
+                popup_e998f47049635479ff0b19b7b1d1ecbb.setContent(html_e04e4d70a585d68a43f332d6b7ce629b);
+            
+        
+
+        circle_marker_8e1c002337a7c84307ecc76d7cfcdae5.bindPopup(popup_e998f47049635479ff0b19b7b1d1ecbb)
+        ;
+
+        
+    
+    
+            var circle_marker_d2f0049ce734c5de1e7645438ca33dd9 = L.circleMarker(
+                [-21.6163005, -55.164605],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_9dce3d3907f00030bc24f9da2db435ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb4a0cd97da5822c98c391001db2aa4f = $(`<div id="html_eb4a0cd97da5822c98c391001db2aa4f" style="width: 100.0%; height: 100.0%;">maracaju - FRP médio: 147.36</div>`)[0];
+                popup_9dce3d3907f00030bc24f9da2db435ae.setContent(html_eb4a0cd97da5822c98c391001db2aa4f);
+            
+        
+
+        circle_marker_d2f0049ce734c5de1e7645438ca33dd9.bindPopup(popup_9dce3d3907f00030bc24f9da2db435ae)
+        ;
+
+        
+    
+    
+            var circle_marker_b813d5636d7eb90bdccb7bbb7ea69a7c = L.circleMarker(
+                [-20.3616393, -51.4251863],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_4457e10745107add839d0bad296a4158 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8566894ba5d80ee891ef31e69833e0c5 = $(`<div id="html_8566894ba5d80ee891ef31e69833e0c5" style="width: 100.0%; height: 100.0%;">selvíria - FRP médio: 128.56</div>`)[0];
+                popup_4457e10745107add839d0bad296a4158.setContent(html_8566894ba5d80ee891ef31e69833e0c5);
+            
+        
+
+        circle_marker_b813d5636d7eb90bdccb7bbb7ea69a7c.bindPopup(popup_4457e10745107add839d0bad296a4158)
+        ;
+
+        
+    
+    
+            var circle_marker_6b7f309882cb6a6d9407ca49b0a6a150 = L.circleMarker(
+                [-15.9520115, -54.9762106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_80ea9151186aaad3c49dcfa877571648 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a172e79705a33bded5ef34717d5124b2 = $(`<div id="html_a172e79705a33bded5ef34717d5124b2" style="width: 100.0%; height: 100.0%;">jaciara - FRP médio: 119.39</div>`)[0];
+                popup_80ea9151186aaad3c49dcfa877571648.setContent(html_a172e79705a33bded5ef34717d5124b2);
+            
+        
+
+        circle_marker_6b7f309882cb6a6d9407ca49b0a6a150.bindPopup(popup_80ea9151186aaad3c49dcfa877571648)
+        ;
+
+        
+    
+    
+            var circle_marker_e317293067ea5a95d9e8be5c30b434d6 = L.circleMarker(
+                [-14.0968848, -50.3396014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_36248485b9f1a5a91d0d6d14599a1ecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4cc4beae46bc32b24d14c253b44a168 = $(`<div id="html_e4cc4beae46bc32b24d14c253b44a168" style="width: 100.0%; height: 100.0%;">nova crixás - FRP médio: 118.75</div>`)[0];
+                popup_36248485b9f1a5a91d0d6d14599a1ecf.setContent(html_e4cc4beae46bc32b24d14c253b44a168);
+            
+        
+
+        circle_marker_e317293067ea5a95d9e8be5c30b434d6.bindPopup(popup_36248485b9f1a5a91d0d6d14599a1ecf)
+        ;
+
+        
+    
+    
+            var circle_marker_130341e648d80c2a3584b5c58950f8c0 = L.circleMarker(
+                [-17.7215439, -48.158118],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_07e6731164f69f3b7bbd7547e8b75c7f);
+        
+    
+        var popup_d4b4819a22e0a08e1e575307cbe9bd64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5404cf0a3f1cce02d6925af3e4bfcdb8 = $(`<div id="html_5404cf0a3f1cce02d6925af3e4bfcdb8" style="width: 100.0%; height: 100.0%;">ipameri - FRP médio: 111.87</div>`)[0];
+                popup_d4b4819a22e0a08e1e575307cbe9bd64.setContent(html_5404cf0a3f1cce02d6925af3e4bfcdb8);
+            
+        
+
+        circle_marker_130341e648d80c2a3584b5c58950f8c0.bindPopup(popup_d4b4819a22e0a08e1e575307cbe9bd64)
+        ;
+
+        
+    
+</script>
+</html>
